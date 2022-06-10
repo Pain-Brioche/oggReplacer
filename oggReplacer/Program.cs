@@ -35,17 +35,17 @@ namespace ArcScrapper
                 {
                     if ((key.Key == ConsoleKey.D1) || (key.Key == ConsoleKey.NumPad1)) { scrapArc = !scrapArc; }
                     if ((key.Key == ConsoleKey.D2) || (key.Key == ConsoleKey.NumPad2)) { scrapAudio = !scrapAudio; }
-                    if ((key.Key == ConsoleKey.D8) || (key.Key == ConsoleKey.NumPad8)) { backupOldArc = !backupOldArc; }
+                    if ((key.Key == ConsoleKey.D3) || (key.Key == ConsoleKey.NumPad3)) { backupOldArc = !backupOldArc; }
                     if ((key.Key == ConsoleKey.D9) || (key.Key == ConsoleKey.NumPad9)) { logArcFileSystem = !logArcFileSystem; }
 
                     Console.Clear();
                     Tools.WriteLine(gamePath, ConsoleColor.Green);
                     Console.ResetColor();
                     Console.WriteLine("Select options");
-                    Console.Write($"1. Delete unused .arc: "); Tools.WriteLine(scrapArc.ToString(), ConsoleColor.Blue);
-                    Console.Write($"2. Replace audio files: "); Tools.WriteLine(scrapAudio.ToString(), ConsoleColor.Blue);
-                    Console.Write($"8. Backup old .arc: "); Tools.WriteLine(backupOldArc.ToString(), ConsoleColor.Blue);
-                    Console.Write($"9. Display Arc log: "); Tools.WriteLine(logArcFileSystem.ToString(), ConsoleColor.Blue);
+                    Console.Write($" 1. Delete unused .arc: "); Tools.WriteLine(scrapArc.ToString(), ConsoleColor.Blue);
+                    Console.Write($" 2. Replace audio files: "); Tools.WriteLine(scrapAudio.ToString(), ConsoleColor.Blue);
+                    Console.Write($" 3. Backup old .arc: "); Tools.WriteLine(backupOldArc.ToString(), ConsoleColor.Blue);
+                    Console.Write($" 9. Display Arc log: "); Tools.WriteLine(logArcFileSystem.ToString(), ConsoleColor.Blue);
                     Console.Write("Press Enter to Start.");
 
                     key = Console.ReadKey();

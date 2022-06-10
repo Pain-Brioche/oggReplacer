@@ -9,15 +9,16 @@ namespace ArcScrapper
     {
         internal static string GetGamePath()
         {
-            Console.Write("Enter COM3D2.exe path: ");
+            Console.Write("Enter COM3D2.exe or CM3D2.exe path: ");
             Console.ForegroundColor = ConsoleColor.Green;
             string path = Console.ReadLine();
             Console.ResetColor();
-            string exePath = Path.Combine(path, "COM3D2.exe");
+            string exePathCOM = Path.Combine(path, "COM3D2.exe");
+            string exePathCM = Path.Combine(path, "CM3D2.exe");
 
-            if (!File.Exists(exePath))
+            if (!File.Exists(exePathCOM) && !File.Exists(exePathCM))
             {
-                Tools.WriteLine($"Can't find {exePath}, please check", ConsoleColor.Red);
+                Tools.WriteLine($"Can't find COM3D2.exe or CM3D2.exe, please check", ConsoleColor.Red);
                 path = GetGamePath();
             }
 
