@@ -33,3 +33,6 @@ By default, for security, it will make a backup of each modified .arc
 - You can update it as usual.
 - Mods are not affected.
 - You can rerun it after an update or dlc install. It's entirely up to you.
+
+This tool uses Guest's CM3D2.Toolkit branch:
+<https://github.com/JustAGuest4168/CM3D2.Toolkit>
